@@ -7,10 +7,10 @@
     <input type="text" id="myTextInput"> <br><br>
     Author: <br>
     <input type="text" author="myTextInput"> <br><br>
-    Language: <br>
-    <input type="text" language="myTextInput"> <br><br>
     Book's description: <br>
     <input type="text" description="myTextInput"> <br><br>
+    Language: <br>
+    <input type="text" language="myTextInput"> <br><br>
     Page count: <br>
     <input type="text" pagecount="myTextInput"> <br><br>
     
@@ -29,13 +29,29 @@
     </select><br><br>
 
     Or enter another category: <br>
-    <input type="text" category="myTextInput"> 
+    <input type="text" category="myTextInput"> <br><br>
+
+    Please upload the book's cover:<br><br>
+
+<html>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="imageToUpload" id="imageToUpload" accept="image/*">
+        <input type="submit" value="Upload cover">
+    </form>
+</body>
+</html>
+
+
+
+
+
     <br><br><br>
     <div style="text-align: center;">
         <button><b>Add book</b></button>
     </div>
     
-
+    
     
     
 </body>
