@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+    </head>
+    <body>
+        <center>
+            <h1>Readit</h1>
+            <h3>Sign Up</h3>
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" required></td>
+                        <td>Last Name:</td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" required placeholder="email@server.domain"></td>
+                        <td>
+                            <label for="">
+                                City:
+                            </label>
+                        </td>
+                        <td>
+                            <select>
+                                <option hidden> ‎ ‎ ‎ ‎  --Choose a City--‎ ‎ ‎ </option>
+                                <option>Cairo</option>
+                                <option>Alexandria</option>
+                                <option>Giza</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" required placeholder="********"></td>
+                        <td>Confirm Password:</td>
+                        <td><input type="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Type of Account:</td>
+                        <td><input type="radio" name="Type">Publisher</td>
+                        <td><input type="radio" name="Type">Customer</td>
+                    </tr>
+                </table>
+                <p><input type="submit" name="submit" value="Sign Up"></p>
+               <p>Already a member? <a href="login.html">Login</a> here.</p>
+            </form>
+        </center>
+    </body>
+</html>
