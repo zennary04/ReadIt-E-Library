@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ReadIt</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #444;
+            color: #fff;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav-list li {
+            padding: 10px
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+
+        .container {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+
+        #main-sec {
+            width: 80%;
+        }
+
+        #sidebar {
+            width: 20%;
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+
+        #sidebar a {
+            display: block;
+            color: #000;
+
+        }
+
+        #sidebar .suggestion {
+            width: 100px;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>ReadIt</h1>
+        <ul class="nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">View books</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section>
+            <h3>Book Name</h3>
+            <img src="../User Section/assets/book_sample_image.jpeg" alt="book" height="300">
+            <p><strong>Author:</strong> Omar Sameh</p>
+            <p><strong>Category:</strong> Science fiction</p>
+            <p><strong>Description:</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur quibusdam a sint obcaecati.
+                Adipisci, omnis maiores corrupti iusto eum reprehenderit laborum Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Facilis ducimus asperiores fugit excepturi enim esse placeat, perspiciatis
+                labore,minimaconsequuntur quos distinctio iusto. Unde, corrupti. Officia reprehenderit ea rem
+                praesentium.
+                repudiandae odio praesentium, fuga, earum
+                hic dolorem! Ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit cum, enim eos provident
+                illum tempore, recusandae officiis modi vero ducimus error ad repudiandae eveniet obcaecati doloribus
+                repellendus. Recusandae, nesciunt. asdole lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </section>
+        <aside id="sidebar">
+            <div class="suggestion">
+                <img src="../User Section/assets/Adventures_of_sherlock_holmes .jpg" alt="book" height="200">
+                <a href="">Adventures of Sherlock Holmes</a>
+            </div>
+            <div class="suggestion">
+                <img src="../User Section/assets\/Alice's_Adventures_in_Wonderland_cover_(1865).jpg" alt="book"
+                    height="200">
+                <a href="">Adventures of Sherlock Holmes</a>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
