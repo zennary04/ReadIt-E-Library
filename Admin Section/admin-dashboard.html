@@ -1,79 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Dashboard" content="Admin-Dashboard" >
-        <title>Dashboard</title>
-        <link rel="icon" href="" type="image/icon-x" >
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="../User Section/Home.html">Readit</a></li>
-                    <li><a href="#MyProfile">My Profile</a></li>
-                    <li><a href="add-books.html">Add New Book</a></li>
-                    <li><a href="../available-books.html">View Books</a></li>
-                </ul>
-            </nav>
-            <hr>
-        </header>
-        <main>
-            <h1>Dave Green's Publishing House Dashboard</h1>
-                <center>
-                    <hr>
-                    <table border="5">
-                        <thead>
-                            <tr>
-                                <td colspan="8">
-                                    <fieldset>
 
-                                        <center><h2>Insights</h2></center>
-                                    </fieldset>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td><center><big><b>‎ ‎ ‎ ‎ Earnings‎ ‎ ‎ ‎ </b></big></center></td>
-                            <td></td>
-                            <td><center><big><b>‎ Published Books‎ ‎ ‎ </b></big></center></td>
-                            <td></td>
-                            <td><center><big><b>Borrowed books</b></big></center></td>
-                            <td></td>
-                            <td><center><big><b>Most Borrowed book</b></big></center></td>
-                        </tr>
-                        <tr>
-                            <td><center><b><i>$624</i></b></center></td>
-                            <td></td>
-                            <td><center><b><i>18</i></b></center></td>
-                            <td></td>
-                            <td><center><b><i>140</i></b></center></td>
-                            <td></td>
-                            <td><center><b><i>Alice's Advetures in Wonderland</i></b></center></td>
-                        </tr>
-                        <tr>
-                            <center>
-                                <td colspan="8">
-                                    <center><b><i>2023 Recap</i></b></center>
-                                </td>
-                            </center>
-                        </tr>
-                        <tr>
-                                <td colspan="8">
-                                    <center><img src="assets/temp_graph.png " alt="temp_graph" height="400"></center>
-                                </td>
-                        </tr>
-                    </table>
-                </center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Dashboard" content="Admin-Dashboard">
+    <title>Dashboard</title>
+    <link rel="icon" href="" type="image/icon-x">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #444;
+            color: #fff;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav-list li {
+            padding: 0 10px
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>ReadIt</h1>
+            <ul class="nav-list">
+                <li><a href="../User Section/Home.html">Home</a></li>
+                <li><a href="../Admin Section/admin-dashboard.html">Dashboard</a></li>
+                <li><a href="../available-books.html">View books</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Dave Green's Publishing House Dashboard</h1>
+        <center>
             <hr>
-        </main>
-        <footer id="footer">
-                <hr/>
-                <div>
-                    <p><a href="#">Back to top</a> </p>
-                    <p>&copy;<a href="" target="_blank">Readit creators</a></p>
-                </div>
-        </footer>
-    </body>
+            <table border="5">
+                <thead>
+                    <tr>
+                        <td colspan="8">
+                            <fieldset>
+
+                                <center>
+                                    <h2>Insights</h2>
+                                </center>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <center><big><b>‎ ‎ ‎ ‎ Earnings‎ ‎ ‎ ‎ </b></big></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><big><b>‎ Published Books‎ ‎ ‎ </b></big></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><big><b>Borrowed books</b></big></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><big><b>Most Borrowed book</b></big></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><b><i>$624</i></b></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><b><i>18</i></b></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><b><i>140</i></b></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><b><i>Alice's Advetures in Wonderland</i></b></center>
+                    </td>
+                </tr>
+                <tr>
+                    <center>
+                        <td colspan="8">
+                            <center><b><i>2023 Recap</i></b></center>
+                        </td>
+                    </center>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <center><img src="assets/temp_graph.png " alt="temp_graph" height="400"></center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <hr>
+    </main>
+    <footer id="footer">
+        <hr />
+        <div>
+            <p><a href="#">Back to top</a> </p>
+            <p>&copy;<a href="" target="_blank">Readit creators</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>

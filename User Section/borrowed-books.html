@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Borrowed Books</title>
-</head>
-    <body>
-        <center>
-            <h1>Readit</h1>
-        </center>
+    <style>
+        body {
+            margin: 0;
+        }
 
-        <h2>‎ ‎ ‎ Books You've Borrowed</h2>
-        
-        <center>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <center>
-                                <a href="">
-                                    <img src="assets/Alice's_Adventures_in_Wonderland_cover_(1865).jpg" alt="Alice's Adventures in Wonderland Cover" height="410">
-                                </a>
-                            </center>
-                        </td>
-                        <td>
-                            <img src="assets/clarion-color-swatches-white.png" height="150">
-                        </td>
-                        <td>
-                            <center>
-                                <a href="">
-                                    <img src="assets/Adventures_of_sherlock_holmes .jpg" alt="Adventures of Sherlock Holmes Book Cover(1865)" height="410">
-                                </a>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><center><b>Alice's Adventures in Wonderland</b></center></td>
-                        <td></td>
-                        <td><center><b>Adventures of Sherlock Holmes</b></center></td>
-                    </tr>
-                    <tr>
-                        <td><center><i><b>2.50$.</b></i> to be returned no later than 20/04/2024</center></td>
-                        <td></td>
-                        <td><center><i><b>1.99$.</b></i> to be returned no later than 28/03/2024</center></td>
-                    </tr>
-                </table>
-            </div>
-            <br> <br> <br>
-            <p><b><i>
-                Ready for an exciting reading adventure? Dive into our selection of captivating books available for borrowing. Explore more titles and start your next journey!
-            </i></b></p>
-            <a href="../available-books.html">View More Books Now</a>
-        </center>
-    </body>
+        nav {
+            display: flex;
+            background-color: #444;
+            color: #fff;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav-list li {
+            padding: 0 10px
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>ReadIt</h1>
+        <ul class="nav-list">
+            <li><a href="../User Section/Home.html">Home</a></li>
+            <li><a href="../Admin Section/admin-dashboard.html">Dashboard</a></li>
+            <li><a href="../available-books.html">View books</a></li>
+        </ul>
+    </nav>
+
+    <h2>‎ ‎ ‎ Books You've Borrowed</h2>
+
+    <center>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <center>
+                            <a href="">
+                                <img src="assets/Alice's_Adventures_in_Wonderland_cover_(1865).jpg"
+                                    alt="Alice's Adventures in Wonderland Cover" height="410">
+                            </a>
+                        </center>
+                    </td>
+                    <td>
+                        <img src="assets/clarion-color-swatches-white.png" height="150">
+                    </td>
+                    <td>
+                        <center>
+                            <a href="">
+                                <img src="assets/Adventures_of_sherlock_holmes .jpg"
+                                    alt="Adventures of Sherlock Holmes Book Cover(1865)" height="410">
+                            </a>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><b>Alice's Adventures in Wonderland</b></center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><b>Adventures of Sherlock Holmes</b></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><i><b>2.50$.</b></i> to be returned no later than 20/04/2024</center>
+                    </td>
+                    <td></td>
+                    <td>
+                        <center><i><b>1.99$.</b></i> to be returned no later than 28/03/2024</center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br> <br> <br>
+        <p><b><i>
+                    Ready for an exciting reading adventure? Dive into our selection of captivating books available for
+                    borrowing. Explore more titles and start your next journey!
+                </i></b></p>
+        <a href="../available-books.html">View More Books Now</a>
+    </center>
+</body>
+
 </html>
