@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readit - E-Library</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #444;
+            color: #fff;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav-list li {
+            padding: 0 10px
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
 </head>
+
 <body>
-        <center><h1>Welcome to Readit</h1></center>
-        
-        <center><div>
+    <nav>
+        <h1>ReadIt</h1>
+        <ul class="nav-list">
+            <li><a href="../User Section/Home.html">Home</a></li>
+            <li><a href="../Admin Section/admin-dashboard.html">Dashboard</a></li>
+            <li><a href="../available-books.html">View books</a></li>
+        </ul>
+    </nav>
+    <center>
+        <h1>Welcome to Readit</h1>
+    </center>
+
+    <center>
+        <div>
             <form>
                 <label for="search">Search:</label>
                 <input type="text" id="search" name="search" placeholder="Search for a book...">
                 <button type="submit">Search</button>
             </form>
-            </div>
-        </center>
-        <div>   
-            <ul>
-                <li><a href="borrowed-books.html"><big>View Borrowed Books</big></a></li>
-                <li><a href="../available-books.html"><big>View Available Books</big></a></li>
-            </ul>
         </div>
+    </center>
+    <div>
+        <ul>
+            <li><a href="borrowed-books.html"><big>View Borrowed Books</big></a></li>
+            <li><a href="../available-books.html"><big>View Available Books</big></a></li>
+        </ul>
+    </div>
 
 </body>
+
 </html>

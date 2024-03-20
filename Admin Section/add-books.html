@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html>
-<h1>Add a new book:  </h1>
-<br>
+
+<head>
+    <title>Readit - Add Book</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #444;
+            color: #fff;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav-list li {
+            padding: 0 10px
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
 <body>
+    <nav>
+        <h1>ReadIt</h1>
+        <ul class="nav-list">
+            <li><a href="../User Section/Home.html">Home</a></li>
+            <li><a href="../Admin Section/admin-dashboard.html">Dashboard</a></li>
+            <li><a href="../available-books.html">View books</a></li>
+        </ul>
+    </nav>
+    <h1>Add a new book: </h1>
+    <br>
     Book's title: <br>
     <input type="text" title="myTextInput"> <br><br>
     Book's ID: <br>
@@ -15,19 +62,19 @@
     <input type="text" language="myTextInput"> <br><br>
     Page count: <br>
     <input type="text" pagecount="myTextInput"> <br><br>
-    
+
     Please choose the suitable category: <br>
     <select id="mySelectBox" name="mySelectBox">
-    <option value="option1">History</option>
-    <option value="option2">Science </option>
-    <option value="option3">Novel</option>
-    <option value="option4">Poetry</option>
-    <option value="option5">Romance</option>
-    <option value="option6">Mystery / Thriller</option>
-    <option value="option7">Fiction</option>
-    <option value="option8">Comedy</option>
-    <option value="option9">Fantasy</option>
-    <option value="option10">Horror</option>
+        <option value="option1">History</option>
+        <option value="option2">Science </option>
+        <option value="option3">Novel</option>
+        <option value="option4">Poetry</option>
+        <option value="option5">Romance</option>
+        <option value="option6">Mystery / Thriller</option>
+        <option value="option7">Fiction</option>
+        <option value="option8">Comedy</option>
+        <option value="option9">Fantasy</option>
+        <option value="option10">Horror</option>
     </select><br><br>
 
     Or enter another category: <br>
@@ -49,9 +96,10 @@
     <div style="text-align: center;">
         <button><b>Add book</b></button>
     </div>
-    
-    
-    
-    
+
+
+
+
 </body>
+
 </html>
